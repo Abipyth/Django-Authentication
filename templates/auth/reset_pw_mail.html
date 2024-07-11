@@ -1,0 +1,10 @@
+{% autoescape off %}
+
+Hi {{user.useranme}}
+
+please click below link to reset your account password in Homestay Web kindly dont share with this anyone 
+
+http://{{domain}}{% url "reset" uidb64=uid token=token %}
+
+
+{%  endautoescape %}
